@@ -106,9 +106,11 @@ img {
 .cardbody .body-content {
   border-left: 2px solid yellow;
 }
-.col-4 .card {
+.col-4 .card{
   background-color: #444487;
   color: white;
+}
+.col-4 .card.card-relative {
   position: relative;
 }
 .col-4 .cardbody {
@@ -197,11 +199,19 @@ img {
     }
 }
 @media (max-width:600px) {
-    .col-4{
+  .col-8{
+    width: 100%;
+
+  } 
+  .col-8 .card-row{
+    height: auto;
+  }
+  .col-4{
       width: 100%;
     }
     .card-content{
       width: 100%;
+      height: 350px;
     }
     .card-content::before{
       top: -15px;
@@ -209,6 +219,7 @@ img {
     }
     .card-banner{
       width: 100%;
+      height: 350px;
     }
     .center-align{
       width: 100%;
