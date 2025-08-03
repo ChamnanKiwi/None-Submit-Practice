@@ -1,0 +1,83 @@
+:root {
+  --color-bg: #eee;
+  --color-fg-dark: #000;
+  --color-fg-light: #fff;
+  --color-card-bg: #fff;
+  --color-toggle-link:#ddd;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--color-bg);
+  height: 120vh;
+}
+.card-header .fa-plus{
+    background-color: #000;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 50%;    
+    color: var(--color-fg-light);
+    align-content: center;
+    text-align: center;
+}
+.toggle-link {
+  text-decoration: none;
+  position: relative;
+  color: var(--color-fg);
+  align-content: center;
+}
+.toggle-link h3 {
+  font-size: 24px;
+}
+.toggle-link::before {
+  content: "\f054";
+  font-family: "Font Awesome 7 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 125px;
+  top: 4px;
+  font-size: 18px;
+  color: var(--color-toggle-link);
+}
+.toggle-link[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+.card-header {
+  border: none;
+  background-color: var();
+}
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+  border: none;
+}
+.edu-icon .fa-solid{
+    font-size: 20px;
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-bg);
+    align-content: center;
+    border-radius: 50%;
+    position: relative;
+}
+.edu-icon{
+    position: relative;
+}
+.edu-icon::before{
+    content: '';
+    width: 3px;
+    height: 50px;
+    background-color: var(--color-bg);
+    position: absolute;
+    top: 54px;
+    left: 22px;
+}
+.edu-item .description span{
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+}
